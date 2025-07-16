@@ -14,10 +14,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up Arduino CLI
-        uses: arduino/setup-arduino-cli@v1.1.2
-        with:
-          version: 0.34.3
+      - name: Download Arduino CLI manually
+        run: |
+          curl -fsSL https://downloads.arduino.cc/arduino-cli/arduino-cli_latest_Linux_64bit.tar.gz | tar -xzv
+          sudo mv arduino-cli /usr/local/bin/
+
 
       - name: Install ESP8266 core
         run: |
