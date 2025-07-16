@@ -29,7 +29,7 @@ jobs:
 
       - name: Compile Sketch
         run: |
-          arduino-cli compile --fqbn esp8266:esp8266:nodemcuv2 sensor_ketinggian_air/sensor_ketinggian_air.ino
+          arduino-cli compile --fqbn esp8266:esp8266:nodemcuv2 sensor_ketinggian_air.ino
 
       - name: Run Lint or Format Check (Opsional)
         run: echo "Add format or lint check here if needed"
