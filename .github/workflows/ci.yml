@@ -1,4 +1,4 @@
-name: Arduino CI Build
+name: Sensor Ketingggian Air
 
 on:
   push:
