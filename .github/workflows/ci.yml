@@ -30,7 +30,7 @@ jobs:
       - name: Install Arduino Library
         run: |
           arduino-cli lib install "Blynk"
-          arduino-cli lib install "Arduino-LiquidCrystal-I2C-library-master"
+          arduino-cli lib install "LiquidCrystal_I2C"
 
       - name: Compile Sketch
         run: |
