@@ -71,7 +71,7 @@ void setup() {
   pinMode(TRIG_PIN, OUTPUT);
   pinMode(ECHO_PIN, INPUT);
 
-  lcd.begin(16, 2);
+  lcd.begin();
   lcd.backlight();
   lcd.setCursor(0, 0);
   lcd.print("Ketinggian Air:");
