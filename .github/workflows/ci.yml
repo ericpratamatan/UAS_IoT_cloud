@@ -27,6 +27,9 @@ jobs:
           arduino-cli core update-index
           arduino-cli core install esp8266:esp8266
 
+      - name: Install Blynk Library
+        run: arduino-cli lib install "Blynk"
+
       - name: Compile Sketch
         run: |
           arduino-cli compile --fqbn esp8266:esp8266:nodemcuv2 sensor_ketinggian_air/sensor_ketinggian_air.ino
