@@ -27,8 +27,10 @@ jobs:
           arduino-cli core update-index
           arduino-cli core install esp8266:esp8266
 
-      - name: Install Blynk Library
-        run: arduino-cli lib install "Blynk"
+      - name: Install Arduino Library
+        run: |
+          arduino-cli lib install "Blynk"
+          arduino-cli lib install "LiquidCrystal_I2C"
 
       - name: Compile Sketch
         run: |
